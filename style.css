@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+:root{
+    /*Primary*/
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    /*Neutral*/
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: content-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0%;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bg2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20%;
+}
+
+.card{
+    width: 30vw;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: 2px solid transparent;
+    border-radius: 50px;
+    
+}
+
+.ilustracion{
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 51%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+h1{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-size: 25px;
+}
+
+p{
+    color: var(--desaturated-blue);
+    text-align: center;
+    padding: 0rem 2.5rem .5rem 2.5rem;
+}
+
+.precio{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    border-radius: 20px;
+    padding-left: 1rem;
+}
+
+.valor{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    margin: 0;
+    
+}
+
+.logo_musica{
+    background-image: url(/images/icon-music.svg);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.info p{
+    padding: 0;
+}
+
+.info{
+    padding-left: 1rem;
+}
+
+.plan{
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.cambiar{
+    align-self: center;
+    padding-right: 1rem;
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+
+.proceda{
+    width: 75%;
+    background-color: var(--bright-blue);
+    color: white;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 1rem 0 0rem 0;
+}
+.cancelar{
+    width: 75%;
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
